@@ -4,9 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("data.csv", low_memory=False)
-
-#print(df.head())
-#print(df["SITE_NAME"])
 df_new = df.query("SITE_NAME == 'Swale at Catterick Bridge'")
 
 t = df_new["Temperature water continuous"].astype(float)
