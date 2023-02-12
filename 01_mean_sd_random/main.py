@@ -4,8 +4,8 @@ from math import sqrt
 
 data = []
 
-for i in range(10) :
-	data.append(random.randint(0, 100))
+for i in range(10):
+    data.append(random.randint(0, 100))
 
 mean = np.mean(data)
 sd = sqrt(np.var(data))
